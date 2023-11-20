@@ -1,0 +1,253 @@
+/* Global */
+
+body {font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover, a:focus {
+    color: #404BBF;
+}
+
+ul,
+ol { 
+    list-style-type: none;
+}
+
+p {
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em
+}
+
+
+
+/* Header */
+
+.logo { font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5; }
+
+.logo1-item {
+color: #2E2F42;
+}
+
+.logo-item{
+    color:#F4F4FD
+}
+.nav-item {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em;
+    color: #2E2F42
+}
+
+
+.address-main {
+    font-style: normal;
+}
+
+.address-item {
+color: #434455;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+}
+.address-item:hover, 
+.address-item:focus {
+    color:#404BBF;
+}
+
+/* Body */
+
+/* Title section */
+
+.title-section {
+    background-color: #2E2F42;
+}
+.main-title {
+    color:#FFF;
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    }
+
+.order-button {
+   background-color: #4D5AE5;
+   cursor: pointer;
+   color:#FFF;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.04em;
+
+
+}
+.order-button:hover,
+.order-button:focus {
+    background-color: #404BBF;
+}
+/* Advantages section */
+
+    .hidden-title {
+        color: #FFF
+}
+
+.advantages-section {
+    background-color: #FFF;
+}
+
+.advantages-item{
+    color: #2E2F42;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    /* 120% */
+    letter-spacing: 0.02em;
+}
+
+.advantages-context {
+    color: #434455;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em;
+}
+
+/* Our team section */
+
+.our-team-section {
+    background-color: #F4F4FD;
+
+}
+
+.our-team-title {
+
+    color:#2E2F42;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+}
+
+.team-element {
+    background-color: #FFF;
+}
+
+.team-member {
+    color:#2E2F42;
+        text-align: center;
+      
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        /* 120% */
+        letter-spacing: 0.02em;
+}
+
+.team-member-role {
+    color: #434455;
+        text-align: center;
+        /* Body */
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        /* 150% */
+        letter-spacing: 0.02em;
+}
+
+/* Our portfolio section */
+
+.portfolio-section {
+    background-color: #FFF;
+}
+
+.portfolio-title {
+    color: #2E2F42;
+    text-align: center;
+    /* Header 2 */
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    /* 111.111% */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.portfolio-item {
+    color: #2E2F42;
+    /* Header 3 */
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    /* 120% */
+    letter-spacing: 0.02em;
+}
+.portfolio-item-type {
+color: #434455;
+/* Body */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+/* 150% */
+letter-spacing: 0.02em;
+}
+
+/* Footer */
+.footer {
+    background-color: #2E2F42;
+}
+
+.footer-text {
+    color: #F4F4FD;
+    /* Body */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em;
+}
