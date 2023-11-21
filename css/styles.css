@@ -110,8 +110,8 @@ main {
     text-transform: uppercase;
     color: #4D5AE5;
     margin-right: 76px;
-    display: inline-block;
-    margin-bottom: 16px;
+    
+    
 }
 
 .logo1-item {
@@ -433,6 +433,7 @@ main {
 }
 .footer-logo {
     display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-text {
