@@ -418,18 +418,13 @@ main {
 
 /* Footer */
 
-.footer-container {
-    display: flex;
-    padding-top: 101.5px;
-    padding-bottom: 100px;
-    height: 100%;
-    flex-direction: column;
-}
+
 
 .footer {
     background-color: #2E2F42;
     height: 312px;
-    padding: 100px 0;
+    padding-top: 101.5px;
+    padding-bottom: 100px;
 }
 .footer-logo {
     display: inline-block;
