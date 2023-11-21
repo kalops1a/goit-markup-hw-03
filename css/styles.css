@@ -261,6 +261,7 @@ main {
     line-height: 1.2;
     /* 120% */
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .advantages-context {
@@ -396,7 +397,7 @@ main {
     font-style: normal;
     font-weight: 500;
     line-height: 1.2;
-    /* 120% */
+    margin-bottom: 8px;
     letter-spacing: 0.02em;
 }
 
@@ -429,6 +430,9 @@ main {
     background-color: #2E2F42;
     height: 312px;
     padding: 100px 0;
+}
+.footer-logo {
+    display: inline-block;
 }
 
 .footer-text {
