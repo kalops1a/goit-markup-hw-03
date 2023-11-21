@@ -1,6 +1,7 @@
 /* Global */
 
-body {font-family: "Roboto", sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFF;
     font-size: 16px;
@@ -8,16 +9,32 @@ body {font-family: "Roboto", sans-serif;
 
 }
 
-a {
-    text-decoration: none
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-a:hover, a:focus {
+a {
+    text-decoration: none;
+
+}
+
+a:hover,
+a:focus {
     color: #404BBF;
 }
 
 ul,
-ol { 
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     list-style-type: none;
 }
 
@@ -27,27 +44,93 @@ p {
     letter-spacing: 0.02em
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 /* Header */
 
-.logo { font-family: "Raleway", sans-serif;
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1440px;
+
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+
+}
+
+
+.logo {
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5; }
+    color: #4D5AE5;
+}
 
 .logo1-item {
-color: #2E2F42;
+    color: #2E2F42;
 }
 
-.logo-item{
-    color:#F4F4FD
+.logo-item {
+    color: #F4F4FD
 }
-.nav-item {
+
+.page-nav {
+    display: flex;
+    padding-left: 15px;
+}
+
+.nav-list {
+
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+}
+
+.nav-list-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -59,30 +142,49 @@ color: #2E2F42;
 }
 
 
-.address-main {
+.address-main-list {
+    display: flex;
+    flex-direction: row;
     font-style: normal;
+    padding-right: 15px;
+    gap: 40px;
 }
 
 .address-item {
-color: #434455;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
 
 }
-.address-item:hover, 
+
+.address-item:hover,
 .address-item:focus {
-    color:#404BBF;
+    color: #404BBF;
 }
 
 /* Body */
 
 /* Title section */
 
-.title-section {
+.title-section-container {
+    padding-top: 188px;
     background-color: #2E2F42;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 188px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
 }
+
+
 .main-title {
-    color:#FFF;
+    height: 120px;
+    width: 496px;
+    color: #FFF;
     font-family: Roboto;
     font-size: 56px;
     font-style: normal;
@@ -90,37 +192,57 @@ color: #434455;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    }
+
+}
 
 .order-button {
-   background-color: #4D5AE5;
-   cursor: pointer;
-   color:#FFF;
+    width: 169px;
+    height: 56px;
+    background-color: #4D5AE5;
+    cursor: pointer;
+    color: #FFF;
     font-family: inherit;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
-    /* 150% */
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     letter-spacing: 0.04em;
 
 
 }
+
 .order-button:hover,
 .order-button:focus {
     background-color: #404BBF;
 }
+
 /* Advantages section */
 
-    .hidden-title {
-        color: #FFF
-}
+
 
 .advantages-section {
     background-color: #FFF;
 }
 
-.advantages-item{
+.advantages-list {
+    display: flex;
+    gap: 24px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.advantages-context {
+    height: 104px;
+    margin-top: 8px;
+}
+
+.advantages-feature {
+    width: calc((100% - 72px) / 4);
+}
+
+.advantages-item {
     color: #2E2F42;
     font-family: Roboto;
     font-size: 20px;
@@ -144,52 +266,66 @@ color: #434455;
 
 /* Our team section */
 
-.our-team-section {
+.team-info-container {
     background-color: #F4F4FD;
-
+    height: 732px;
 }
 
-.our-team-title {
 
-    color:#2E2F42;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
+.our-team-title {
+    padding-top: 120px;
+    color: #2E2F42;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.team-element-list {
+    display: flex;
+    padding-top: 72px;
+    gap: 24px;
+    justify-content: center;
 }
 
 .team-element {
     background-color: #FFF;
+    border-radius: 0px 0px 4px 4px;
+
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
 }
 
 .team-member {
-    color:#2E2F42;
-        text-align: center;
-      
-        font-family: Roboto;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.2;
-        /* 120% */
-        letter-spacing: 0.02em;
+    color: #2E2F42;
+    text-align: center;
+    padding-top: 32px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    /* 120% */
+    letter-spacing: 0.02em;
 }
 
 .team-member-role {
     color: #434455;
-        text-align: center;
-        /* Body */
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
-        /* 150% */
-        letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 8px;
+    padding-bottom: 32px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em;
 }
 
 /* Our portfolio section */
@@ -198,7 +334,10 @@ color: #434455;
     background-color: #FFF;
 }
 
+
 .portfolio-title {
+    padding-top: 120px;
+    padding-bottom: 72px;
     color: #2E2F42;
     text-align: center;
     /* Header 2 */
@@ -212,9 +351,24 @@ color: #434455;
     text-transform: capitalize;
 }
 
+.list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 120px;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-block {
+    border: 1px solid #E7E9FC;
+}
+
 .portfolio-item {
+    padding-left: 16px;
+    padding-right: 16px;
     color: #2E2F42;
-    /* Header 3 */
+    padding-top: 32px;
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
@@ -223,24 +377,40 @@ color: #434455;
     /* 120% */
     letter-spacing: 0.02em;
 }
+
 .portfolio-item-type {
-color: #434455;
-/* Body */
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 1.5;
-/* 150% */
-letter-spacing: 0.02em;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #434455;
+    padding-bottom: 32px;
+    padding-top: 8px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em;
 }
 
 /* Footer */
+
+.footer-container {
+    display: flex;
+    padding-top: 101.5px;
+    padding-bottom: 100px;
+    height: 100%;
+    flex-direction: column;
+}
+
 .footer {
     background-color: #2E2F42;
+    height: 312px;
 }
 
 .footer-text {
+    padding-top: 17.5px;
+    width: 264px;
     color: #F4F4FD;
     /* Body */
     font-family: Roboto;
@@ -250,4 +420,5 @@ letter-spacing: 0.02em;
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.02em;
+
 }
