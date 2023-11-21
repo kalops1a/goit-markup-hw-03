@@ -83,10 +83,13 @@ main {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    max-width: 1440px;
+    width: 1158px;
 
 }
 
+.page-header {
+    border-bottom: 1px solid #e7e9fc
+}
 
 .header-container {
     display: flex;
@@ -106,6 +109,9 @@ main {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    margin-right: 76px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo1-item {
@@ -119,13 +125,14 @@ main {
 .page-nav {
     display: flex;
     padding-left: 15px;
+    align-items: center;
 }
 
 .nav-list {
 
     display: flex;
     gap: 40px;
-    margin-left: 76px;
+    
 }
 
 .nav-list-item {
@@ -168,13 +175,16 @@ main {
 
 /* Title section */
 
+.title-section {
+    padding: 188px 0;
+}
 .title-section-container {
-    padding-top: 188px;
+   
     background-color: #2E2F42;
     height: 600px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 188px;
+    
     align-items: center;
     flex-wrap: wrap;
     gap: 48px;
@@ -183,7 +193,7 @@ main {
 
 .main-title {
     height: 120px;
-    width: 496px;
+    max-width: 496px;
     color: #FFF;
     font-family: Roboto;
     font-size: 56px;
@@ -196,7 +206,8 @@ main {
 }
 
 .order-button {
-    width: 169px;
+    border: none;
+    min-width: 169px;
     height: 56px;
     background-color: #4D5AE5;
     cursor: pointer;
@@ -224,13 +235,12 @@ main {
 
 .advantages-section {
     background-color: #FFF;
+    padding: 120px 0
 }
 
 .advantages-list {
     display: flex;
     gap: 24px;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .advantages-context {
@@ -270,10 +280,12 @@ main {
     background-color: #F4F4FD;
     height: 732px;
 }
-
+.our-team-section{
+    padding: 120px 0
+}
 
 .our-team-title {
-    padding-top: 120px;
+    
     color: #2E2F42;
     text-align: center;
     font-family: Roboto;
@@ -283,6 +295,7 @@ main {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team-element-list {
@@ -291,17 +304,20 @@ main {
     gap: 24px;
     justify-content: center;
 }
-
+.name-role-box {
+    padding: 32px 0;
+}
 .team-element {
     background-color: #FFF;
     border-radius: 0px 0px 4px 4px;
-
+    width: calc((100% - 72px) / 4);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 
 }
 
 .team-member {
+  
     color: #2E2F42;
     text-align: center;
     padding-top: 32px;
@@ -310,14 +326,13 @@ main {
     font-style: normal;
     font-weight: 500;
     line-height: 1.2;
-    /* 120% */
+    margin-bottom: 8px;
     letter-spacing: 0.02em;
 }
 
 .team-member-role {
     color: #434455;
     text-align: center;
-    margin-top: 8px;
     padding-bottom: 32px;
     font-family: Roboto;
     font-size: 16px;
@@ -332,12 +347,13 @@ main {
 
 .portfolio-section {
     background-color: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 
 .portfolio-title {
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     color: #2E2F42;
     text-align: center;
     /* Header 2 */
@@ -362,8 +378,14 @@ main {
 
 .portfolio-block {
     border: 1px solid #E7E9FC;
+    width: calc((100% - 48px) / 3);
+    
 }
-
+.service-type-box{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 .portfolio-item {
     padding-left: 16px;
     padding-right: 16px;
@@ -406,6 +428,7 @@ main {
 .footer {
     background-color: #2E2F42;
     height: 312px;
+    padding: 100px 0;
 }
 
 .footer-text {
