@@ -108,6 +108,7 @@ main {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--NAVY-BLUE, #2E2F42);
+    margin-right: 76px
 }
 
 .logo1-item {
@@ -137,7 +138,7 @@ main {
 }
 
 .nav-list {
-    margin-left: 76px;
+    
     display: flex;
     gap: 40px;
     
