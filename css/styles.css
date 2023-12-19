@@ -118,7 +118,7 @@ main {
 .logo2-item {
     color: var(--CLOUD, #F4F4FD);
 }
-.logo2 {
+.logotwo {
     display: inline-block;
     color: var(--IRIS, #4D5AE5);
     font-family: Raleway;
@@ -446,10 +446,7 @@ main {
     
     padding: 100px 0;
 }
-.footer-logo {
-    display: inline-block;
-    
-}
+
 
 .footer-text {
     
